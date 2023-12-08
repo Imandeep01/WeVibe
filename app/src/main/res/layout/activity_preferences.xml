@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Preferences"
+    android:background= "@color/main_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="30sp">
+
+        <TextView
+            android:id="@+id/questions_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:padding="4dp"
+            android:text="Search Preferences"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/barlow_medium"
+            android:text="Gender"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cards"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:elevation="10sp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_anyGender"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="@font/barlow_light"
+                android:minHeight="48dp"
+                android:switchPadding="100sp"
+                android:text="Any"
+                android:textOff="Off"
+                android:textOn="ON"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/layout_genderRadioGrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10sp"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_lookingFor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/men_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5sp"
+                        android:checked="true"
+                        android:fontFamily="@font/barlow_light"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:text="Men"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/women_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/barlow_light"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:text="Women"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/nonBinary_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/barlow_light"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:text="Non-binary"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/barlow_medium"
+            android:text="Age"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/layout_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cards"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp">
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_anyAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_light"
+                android:minHeight="48dp"
+                android:switchPadding="100sp"
+                android:text="No age restriction"
+                android:textStyle="bold"
+                android:checked="true" />
+            <LinearLayout
+                android:id="@+id/layout_ageLimits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="10sp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_light"
+                        android:padding="30dp"
+                        android:text="Minimum"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/Button_minAgeDec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/EditText_minAge"
+                        android:layout_width="40sp"
+                        android:layout_height="wrap_content"
+                        android:text="19"
+                        android:padding="5dp"
+                        android:textAlignment="center"/>
+
+                    <Button
+                        android:id="@+id/Button_minAgeInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_light"
+                        android:padding="30dp"
+                        android:text="Maximum"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/Button_maxAgeDec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/EditText_maxAge"
+                        android:layout_width="40sp"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:padding="5dp"
+                        android:textAlignment="center"/>
+                    <Button
+                        android:id="@+id/Button_maxAgeInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/barlow_medium"
+            android:text="Search Distance"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/distance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cards"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_anyDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_light"
+                android:minHeight="48dp"
+                android:text="Infinity "
+                android:textStyle="bold"
+                android:checked="true"
+                />
+            <LinearLayout
+                android:id="@+id/layout_searchDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <EditText
+                        android:id="@+id/EditText_distance"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_light"
+                        android:text=" kms away"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/seekbar_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height ="wrap_content"
+                    android:max="1000"
+                    android:min="1"
+                    android:padding="15dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relationship Status"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/barlow_medium"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:id="@+id/layout_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cards"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp">
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_anyStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_light"
+                android:minHeight="48dp"
+                android:switchPadding="100sp"
+                android:text="Any"
+                android:textStyle="bold"
+                android:checked="true"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/layout_statusFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+                <RadioGroup
+                    android:id="@+id/radioGroup_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/barlow_light">
+                    <RadioButton
+                        android:id="@+id/single_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single"
+                        android:layout_marginTop="5sp"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:checked="true"
+                        />
+                    <RadioButton
+                        android:id="@+id/married_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Married"
+                        android:layout_marginTop="5sp"
+                        android:minHeight="48dp"
+                        android:padding="5dp"/>
+                    <RadioButton
+                        android:id="@+id/divorced_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Divorced"
+                        android:layout_marginTop="5sp"
+                        android:minHeight="48dp"
+                        android:padding="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logIn_password"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_rounded_corners"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/barlow_medium"
+            android:onClick="onClickLogIn"
+            android:paddingHorizontal="40sp"
+            android:paddingVertical="20sp"
+            android:text="LOG IN"
+            android:textSize="16sp"
+            android:elevation="10sp"/>
+    </LinearLayout>
+</ScrollView>

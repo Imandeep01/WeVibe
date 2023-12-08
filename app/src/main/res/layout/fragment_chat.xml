@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6"
+            android:id="@+id/barLayout">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/chatToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/pacific_queen"
+                android:theme="@style/Theme.MaterialComponents.Light">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pinknew"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+                <TextView
+                    android:id="@+id/Toolbar_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="userName"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/message_background"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/Toolbar_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timer"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="end"
+                    android:textSize="18sp"/>
+
+                <ImageButton
+                    android:id="@+id/videoCallButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/baseline_videocam_24"
+                    android:backgroundTint="@color/message_background"
+                    android:visibility="gone" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleV_messages"
+            android:background="@color/message_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/barLayout"
+            android:layout_above="@+id/layout_messageinput"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_messageinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/message_sent"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            >
+
+            <EditText
+                android:id="@+id/message_inputBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/send_button"
+                android:hint="Type your message here..." />
+            <ImageButton
+                android:id="@+id/send_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/message_sent"
+                android:src="@drawable/ic_send"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

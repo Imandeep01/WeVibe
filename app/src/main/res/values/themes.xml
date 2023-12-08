@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DatingApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/pacific_queen</item>
+        <item name="colorPrimaryDark">@color/pacific_queen</item>
+        <item name="colorAccent">@color/pacific_queen</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

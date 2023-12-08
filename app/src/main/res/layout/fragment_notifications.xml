@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notif2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notifications">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/guy_pic" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You missed a call from John Doe."
+                    android:textColor="#121212"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/notifDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28mins ago"
+                    android:textColor="#050505"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card2"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/friend3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You received a message from John Doe."
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/notifDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19mins ago"
+                    android:textColor="#0B0A0A"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card3"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/friend3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simon wants to match with you."
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/notifDate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2days ago"
+                    android:textColor="#0B0A0A"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/friend2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You are now connected with Jackie. "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/notifDate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2weeks ago"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/friend4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You received a message from Kevin."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/notifDate5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3weeks ago"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/friend4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You are now connected with Kevin."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/notifDate6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5weeks ago"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notif_image7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/friend4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/notifDetails7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You received a message from Kevin."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/notifDate7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3weeks ago"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+

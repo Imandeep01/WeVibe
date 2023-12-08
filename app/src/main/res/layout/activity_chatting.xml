@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context=".Chatting">
+
+        <!-- Header container -->
+        <LinearLayout
+            android:id="@+id/headerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:backgroundTint="@color/pacific_queen">
+
+            <TextView
+                android:id="@+id/chatHeaderTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="John Doe"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/audioCallButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/phone_call"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/videoCallButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/video_call"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <!-- Chat messages container -->
+
+    <!-- Chat input container -->
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/chatMessagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background= "@color/white"
+            android:orientation="vertical"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <LinearLayout
+            android:id="@+id/chatInputContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/chatInputEditText"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type a message"
+                android:background="@null"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:id="@+id/sendMessageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_send"
+                app:tint="@color/teal_200" />
+
+        </LinearLayout>
+
+    </LinearLayout>

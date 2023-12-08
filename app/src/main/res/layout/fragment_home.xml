@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Home"
+    android:background="@color/main_background">
+
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/idUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMessage"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/buttonStartSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="168dp"
+        android:backgroundTint="@color/pacific_queen"
+        android:elevation="100sp"
+        android:fontFamily="@font/poppins"
+        android:padding="15sp"
+        android:text="Start Vibing!"
+        android:textColor="@color/white"
+        android:textSize="8pt" />
+
+</RelativeLayout>

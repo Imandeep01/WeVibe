@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".edit_profile"
+    android:orientation="vertical"
+    android:background= "@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Edit Profile"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                />
+
+            <ImageView
+                android:id="@+id/btn_doneEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_done"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:elevation="35dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/user_photo"
+            app:shapeAppearanceOverlay="@style/Circular"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/gallery_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_addpic"
+            android:layout_alignBottom="@id/profile_image"
+            android:layout_alignRight="@id/profile_image"
+            android:elevation="50dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            tools:cardCornerRadius="10dp"
+            android:backgroundTint="#FBE9E7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="23dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ProfileUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="center"
+                    android:text="Marcelo"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/UserAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="center"
+                    android:text="21"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#79D6D1D1" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                tools:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:id="@+id/phone_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_mobilephone" />
+
+                        <TextView
+                            android:id="@+id/phone_text"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Phone"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/user_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="5878894512"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/location_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_baseline_person_pin_24"
+                            android:padding="2dp"
+                            android:layout_marginStart="5dp"
+                            />
+                        <TextView
+                            android:id="@+id/heading_city"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/barlow_medium"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/user_city"
+                        android:layout_height="wrap_content"
+                        android:text="calgary"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/barlow_medium"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                tools:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="2dp"
+                            android:src="@drawable/icon_person" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Gender"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_gender"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:layout_marginEnd="20sp"
+                            android:checked = "true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+                        <RadioButton
+                            android:id="@+id/radio_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:layout_marginEnd="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+                        <RadioButton
+                            android:id="@+id/radio_nonBinary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Non-Binary"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/calender_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/calender_icon"
+                            android:padding="2dp"
+                            android:layout_marginStart="5dp"
+                            />
+                        <TextView
+                            android:id="@+id/heading_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Birthday"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/barlow_medium"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/Userbirthday"
+                        android:layout_height="wrap_content"
+                        android:text="09/08/1996"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/barlow_medium"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_personalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_light"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:text="Personal Information"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/personalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    tools:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Marital Status"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_maritalStatus"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_married"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Married"
+                            android:layout_marginEnd="20sp"
+                            android:checked = "true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_single"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Single"
+                            android:layout_marginEnd="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_divorced"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Divorced"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/tools"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/heading_race"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Race"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/barlow_medium"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/race"
+                    android:layout_height="wrap_content"
+                    android:text="race"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/barlow_medium"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                tools:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Number of Children"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_numberchildren"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="None"
+                            android:layout_marginEnd="20sp"
+                            android:checked = "true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_onetwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1-2"
+                            android:layout_marginEnd="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_threefour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3-4"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="20sp"
+                            android:fontFamily="@font/barlow_medium"/>
+                        <RadioButton
+                            android:id="@+id/radio_many"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Many"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/heading_qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Highest Qualification"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/barlow_medium"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/quailification"
+                    android:layout_height="wrap_content"
+                    android:text="qualification"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/barlow_medium"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/heading_profession"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profession"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/barlow_medium"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/profession"
+                    android:layout_height="wrap_content"
+                    android:text="Dancer"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/barlow_medium"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                tools:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Plan of starting family"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_familyPlan"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_planYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:layout_marginEnd="20sp"
+                            android:checked = "true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_planNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginEnd="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                tools:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Do you smoke?"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_Smoke"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_smokeYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:layout_marginEnd="20sp"
+                            android:checked = "true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_smokeNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginEnd="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                tools:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Do you drink?"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_drink"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"
+
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_drinkYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:layout_marginEnd="20sp"
+                            android:checked = "true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_drinkNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginEnd="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/barlow_medium"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/heading_lifeSkill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Best life skill"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/barlow_medium"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/lifeSkill"
+                        android:layout_height="wrap_content"
+                        android:text="skill"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/barlow_medium"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/heading_vitalThings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thing you can't live without"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/barlow_medium"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/vitalThing"
+                        android:layout_height="wrap_content"
+                        android:text="family"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/barlow_medium"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/heading_hobby"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="What do you do in spare time?"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/barlow_medium"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/hobby"
+                        android:layout_height="wrap_content"
+                        android:text="dancer"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/barlow_medium"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/heading_friendsSayings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="What do your friends say about you?"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/barlow_medium"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/friendsSayings"
+                        android:layout_height="wrap_content"
+                        android:text="dancer"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/barlow_medium"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

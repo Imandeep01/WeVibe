@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BubbleTextViewStyle">
+
+        <item name="android:windowBackground">#E6F0FA</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    ...
+</resources>

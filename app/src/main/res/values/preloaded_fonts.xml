@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/akronim</item>
+        <item>@font/almendra_display</item>
+        <item>@font/arizonia</item>
+        <item>@font/barlow_light</item>
+        <item>@font/barlow_medium</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/charm</item>
+        <item>@font/delius_swash_caps</item>
+        <item>@font/lovers_quarrel</item>
+        <item>@font/poppins</item>
+    </array>
+</resources>

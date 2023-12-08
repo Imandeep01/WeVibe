@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:padding="10sp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title_have_kids"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="8dp"
+        android:text="Do you have any kids?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_have_kids"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/title_have_kids"
+        app:layout_constraintStart_toStartOf="@+id/title_have_kids"
+        app:layout_constraintTop_toBottomOf="@+id/title_have_kids">
+
+        <AutoCompleteTextView
+            android:id="@+id/spinner_have_kids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Select an option" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/title_want_kids"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Do you want kids?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_have_kids" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_want_kids"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/title_want_kids"
+        app:layout_constraintStart_toStartOf="@+id/title_want_kids"
+        app:layout_constraintTop_toBottomOf="@+id/title_want_kids">
+
+        <AutoCompleteTextView
+            android:id="@+id/spinner_want_kids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Select an option" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you flexible with this?"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_want_kids" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="196dp"
+        android:text="Yes"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_want_kids" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="95dp"
+        android:layout_height="36dp"
+        android:text="Maybe"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/input_want_kids"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="97dp"
+        android:layout_height="47dp"
+        android:text="No"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
